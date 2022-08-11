@@ -1,0 +1,31 @@
+@import '../../variable.scss';
+
+.navUser {
+    background-color: #fff;    
+    height: 10vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    color: $_principalColor;
+    font-weight: 400;
+    padding-right: 5%;
+    .configNav{
+        width: 85%;
+        padding-left: 5%;
+    }
+    .userInfo{
+        width: 15%;
+        text-align: right;
+    }
+    .btn-secondary {
+        background: #fff;
+        border: 0;
+        outline: none;
+        color: $_principalColor;
+    }
+    img{
+        width: 40px;
+        height: auto;
+        border-radius: 100%;
+    }
+}

@@ -1,0 +1,35 @@
+@import '../variable.scss';
+.Template{
+    display: flex;
+    min-height: 100vh;
+    background: $_colorBack;
+    .SideBar{
+        width: 20%;
+        border-right: 1px solid #ccc;
+    }
+    .bodyContent{
+        background: #fff;
+        width: 97%;
+        margin: auto;
+        padding: 3%;
+        border-radius: 5px;
+        margin-top: 1%;
+    }
+
+    .BreadCrump{
+        background: #fff;
+        padding: 2%;
+        width: 97%;
+        height: 60px;
+        margin: auto;
+        margin-top: 1%;
+        display: flex;
+        align-items: center;
+    }
+
+    .Content{
+        width: 80%;
+        background: #e9ecef;
+
+    }
+}

@@ -1,0 +1,72 @@
+@import '../../variable.scss';
+
+.sideBar {
+    background-color: $_seconderColor;
+    height: 100vh;
+
+    .User {
+        background-color: $_principalColor;
+        height: 10%;
+        border-bottom: 1px solid #123;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        .connexion{
+            width: 75%;
+            text-align: center;
+            font-size: 12px;
+        }
+        .configNav{
+           
+    width: 25%;
+    text-align: center;
+    height: 100%;
+    background: #0e395a;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+        }
+    }
+
+    .nav {
+        .items {
+            width: 100%;
+
+            .item {
+                height: 50px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding-left: 7%;
+                color: #fff;
+
+                .item-icon {
+                    width: 18%;
+                }
+
+                .item-link {
+                    width: 82%;
+                    text-decoration: none;
+                    font-weight: 300;
+                    color: #fff;
+
+                }
+            }
+
+        }
+    }
+}
+
+.item:hover {
+    background-color: $_principalColor;
+    cursor: pointer;
+}
+
+.active{
+    background-color: $_principalColor;
+
+}
