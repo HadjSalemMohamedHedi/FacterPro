@@ -8,6 +8,7 @@ import { DocPersoComponent } from './doc-perso/doc-perso.component';
 import { SignatureElecComponent } from './signature-elec/signature-elec.component';
 import { FactureNonPaComponent } from './facture-non-pa/facture-non-pa.component';
 import { RessourceComponent } from './ressource/ressource.component';
+import { ConfigAccountComponent } from './config-account/config-account.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:'docperso',component:DocPersoComponent},
   {path:'signatureElec',component:SignatureElecComponent},
   {path:'factureNonPa',component:FactureNonPaComponent},
-  {path:'ressource',component:RessourceComponent}
+  {path:'ressource',component:RessourceComponent},
+  {path:'configaccount',component:ConfigAccountComponent}
 ]  
   
 @NgModule({

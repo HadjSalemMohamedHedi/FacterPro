@@ -14,21 +14,22 @@
         font-weight: 500;
         text-align: center;
         width: 100%;
-        .connexion{
+
+        .connexion {
             width: 75%;
             text-align: center;
             font-size: 12px;
         }
-        .configNav{
-           
-    width: 25%;
-    text-align: center;
-    height: 100%;
-    background: #0e395a;
-    display: grid;
-    align-items: center;
-    text-align: center;
 
+        .configNav {
+            width: 25%;
+            text-align: center;
+            height: 100%;
+            background: #0e395a;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
         }
     }
 
@@ -66,7 +67,7 @@
     cursor: pointer;
 }
 
-.active{
+.active {
     background-color: $_principalColor;
 
 }

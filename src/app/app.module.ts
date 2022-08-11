@@ -14,6 +14,7 @@ import { DocPersoComponent } from './doc-perso/doc-perso.component';
 import { SignatureElecComponent } from './signature-elec/signature-elec.component';
 import { FactureNonPaComponent } from './facture-non-pa/facture-non-pa.component';
 import { RessourceComponent } from './ressource/ressource.component';
+import { ConfigAccountComponent } from './config-account/config-account.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RessourceComponent } from './ressource/ressource.component';
     DocPersoComponent,
     SignatureElecComponent,
     FactureNonPaComponent,
-    RessourceComponent
+    RessourceComponent,
+    ConfigAccountComponent
   ],
   imports: [
     BrowserModule,
