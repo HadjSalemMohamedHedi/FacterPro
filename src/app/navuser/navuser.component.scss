@@ -3,7 +3,7 @@
 .navUser {
     background-color: #fff;    
     height: 10vh;
-    width: 80vw;
+    width: 100%;
     display: flex;
     align-items: center;
     color: $_principalColor;
@@ -15,7 +15,6 @@
         cursor: pointer;
     }
     .userInfo{
-        width: 15%;
         text-align: right;
     }
     .btn-secondary {

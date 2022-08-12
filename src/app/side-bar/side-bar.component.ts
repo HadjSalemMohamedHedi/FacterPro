@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-side-bar',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
+  collopsed:boolean=false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  GoCollapsed(){
+      this.collopsed = !this.collopsed
+  }
 }

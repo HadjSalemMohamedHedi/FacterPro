@@ -1,8 +1,49 @@
 @import '../../variable.scss';
 
+
+.sideBarCollopsed {
+    background-color: $_seconderColor;
+    height: 100vh;
+    width: 50px;
+    transition: all .5s ease;
+    
+    .connexion {
+        display: none;      
+    }
+
+    .tooltipe:hover .tooltiptext {
+        visibility: visible;
+      }
+      
+
+    .configNav {
+        width: 100%;
+        height: 65px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        background-color: $_principalColor;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid #123;
+    }
+
+    .item-icon {
+        width: 55px;
+        text-align: center;
+    }
+
+    .item-link {
+        display: none;
+    }
+
+}
+
 .sideBar {
     background-color: $_seconderColor;
     height: 100vh;
+    transition: all .5s ease;
 
     .User {
         background-color: $_principalColor;
@@ -32,7 +73,7 @@
             cursor: pointer;
         }
     }
-
+}
     .nav {
         .items {
             width: 100%;
@@ -46,21 +87,19 @@
                 color: #fff;
 
                 .item-icon {
-                    width: 18%;
+                    width: 45px;
                 }
 
                 .item-link {
-                    width: 82%;
+                    width: 210px;
                     text-decoration: none;
                     font-weight: 300;
                     color: #fff;
-
                 }
             }
 
         }
     }
-}
 
 .item:hover {
     background-color: $_principalColor;
@@ -71,3 +110,24 @@
     background-color: $_principalColor;
 
 }
+
+.tooltipe {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltipe .tooltiptext {
+    visibility: hidden;
+    width: 175px;
+    text-align: center;
+    background-color: #123;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    left: 100%;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  

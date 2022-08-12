@@ -4,7 +4,6 @@
     min-height: 100vh;
     background: $_colorBack;
     .SideBar{
-        width: 20%;
         border-right: 1px solid #ccc;
     }
     .bodyContent{
@@ -28,8 +27,7 @@
     }
 
     .Content{
-        width: 80%;
         background: #e9ecef;
-
+        width: 100%;
     }
 }

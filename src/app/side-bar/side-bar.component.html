@@ -1,56 +1,69 @@
-<div class="sideBar">
+<div class="" [ngClass]="collopsed ? 'sideBarCollopsed':'sideBar'  ">
     <div class="User">
         <span class="connexion">
             <i class="fa fa-calendar" aria-hidden="true"></i>
             Dernier connexion:
             <h6>11-08-2022 12:05:35</h6>
         </span>
-        <span class="configNav" routerLink="configaccount">
-            <i class="fa fa-cogs" aria-hidden="true"></i>
+        <span class="configNav" (click)="GoCollapsed()" >
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </span>
     </div>
     <div class="nav">
         <div class="items">
-            <div class="item" routerLink="/home"  routerLinkActive="active">
+            <div class="item tooltipe" routerLink="/home"  routerLinkActive="active">
                 <span class="item-icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
-                <a routerLink="/home" class="item-link">Dasheboard</a>
+                    <a routerLink="/home" class="item-link">Dasheboard</a>
+                    <span class="tooltiptext">Dasheboard</span>
             </div>
 
-            <div class="item" routerLink="/devis" routerLinkActive="active">
+            <div class="item tooltipe" routerLink="/devis" routerLinkActive="active">
                 <span class="item-icon"><i class="fa fa-eur" aria-hidden="true"></i></span>
                 <a routerLink="/devis" class="item-link">Devis </a>
+                <span class="tooltiptext">Devis</span>
             </div>
 
-            <div class="item" routerLink="/facture" routerLinkActive="active">
+            <div class="item tooltipe" routerLink="/facture" routerLinkActive="active">
                 <span class="item-icon"><i class="fa fa-file-text" aria-hidden="true"></i></span>
                 <a routerLink="/facture" class="item-link">facture</a>
+                <span class="tooltiptext">facture</span>
+
             </div>
 
-            <div class="item" routerLink="/bibliotheques" routerLinkActive="active">
+            <div class="item tooltipe" routerLink="/bibliotheques" routerLinkActive="active">
                 <span class="item-icon"><i class="fa fa-list-alt" aria-hidden="true"></i></span>
                 <a routerLink="/bibliotheques" class="item-link">Bibliothèques </a>
+                <span class="tooltiptext">Bibliothèques</span>
             </div>
 
-            <div class="item" routerLink="/docperso" routerLinkActive="active">
+            <div class="item tooltipe" routerLink="/docperso" routerLinkActive="active">
                 <span class="item-icon"><i class="fa fa-magic" aria-hidden="true"></i>
                 </span>
                 <a routerLink="/docperso" class="item-link">Documents perso</a>
+                <span class="tooltiptext">Documents personnalisées</span>
+
             </div>
 
 
-            <div class="item" routerLink="/signatureElec" routerLinkActive="active">
+            <div class="item tooltipe" routerLink="/signatureElec" routerLinkActive="active">
                 <span class="item-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></span>
                 <a routerLink="/signatureElec" class="item-link">Signature électronique</a>
+                <span class="tooltiptext">Signature électronique</span>
+
             </div>
 
-            <div class="item" routerLink="/factureNonPa" routerLinkActive="active">
+            <div class="item tooltipe" routerLink="/factureNonPa" routerLinkActive="active">
                 <span class="item-icon"><i class="fa fa-book" aria-hidden="true"></i></span>
                 <a routerLink="/factureNonPa" class="item-link">Facture non payé</a>
+                <span class="tooltiptext">Facture non payé</span>
+
             </div>
 
-            <div class="item" routerLink="/ressource" routerLinkActive="active">
+            <div class="item tooltipe" routerLink="/ressource" routerLinkActive="active">
                 <span class="item-icon"><i class="fa fa-users" aria-hidden="true"></i></span>
                 <a routerLink="/ressource" class="item-link">Gestion de ressource</a>
+                <span class="tooltiptext">Gestion de ressource</span>
+
             </div>
 
         </div>
